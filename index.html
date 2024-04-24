@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styleSheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Icon Link-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="passScript.js" defer ></script>
+</head>
+<body>
+  <!-- Container for the entire content -->
+  <div class="container">
+    <h2>Password Generator</h2>
+    <!-- Strength bar for indicating password strength -->
+    <div class="strength-bar"></div> 
+    <!-- Wrapper for the main content -->
+    <div class="wrapper">
+      <!-- Outcome section to display generated password -->
+      <div class="outcome">
+        <label class="title">Outcome:</label>
+        <input type="text" id="generated-password" readonly placeholder="Your generated password will appear here.">
+        <button id="copy-btn">Copy</button>
+      </div>
+      <!-- User input section -->
+      <div class="user-input">
+        <input type="text" id="favorite-place" placeholder="Favorite Place">
+        <input type="text" id="favorite-food" placeholder="Favorite Food">
+        <input type="text" id="memorable-word" placeholder="Memorable Word or Number">
+      </div>
+      <!-- Password length setting section -->
+      <div class="pass-settings">
+        <label class="title">Password Length</label>
+        <input type="range" id="password-length" min="1" max="30" value="12">
+        <span id="password-length-display">12</span>
+      </div>
+      <!-- Options for including numbers and symbols -->
+      <div class="pass-settings">
+        <label class="title">Include</label>
+        <ul class="options">
+          <li class="option">
+            <input type="checkbox" id="include-numbers">
+            <label for="include-numbers">Numbers</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="include-symbols">
+            <label for="include-symbols">Symbols</label>
+          </li>
+        </ul>
+      </div>
+      <!-- Options for including favorite place, food, and memorable word -->
+      <div class="pass-settings">
+        <label class="title">Include</label>
+        <ul class="options">
+          <li class="option">
+            <input type="checkbox" id="include-favorite-place">
+            <label for="include-favorite-place">Favorite Place</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="include-favorite-food">
+            <label for="include-favorite-food">Favorite Food</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="include-memorable-word">
+            <label for="include-memorable-word">Memorable Word or Number</label>
+          </li>
+        </ul>
+      </div> 
+        <h3>
+          Tick desired boxes in order to generate a password
+        </h3>
+      <!-- Button to generate password -->
+      <button class="generate-btn">Generate Password</button>
+    </div>
+  </div>
+</body>
+</html>

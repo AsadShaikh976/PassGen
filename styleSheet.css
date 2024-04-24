@@ -1,0 +1,154 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efefe0; /* Almond color */
+}
+
+/* Styling for the container holding the main content */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the wrapper inside the container */
+.wrapper {
+    padding: 20px;
+}
+
+/* Styling for the outcome section */
+.outcome {
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Styling for the user input section */
+.user-input {
+    margin-bottom: 20px;
+}
+
+/* Styling for the input fields inside the user input section */
+.user-input input {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for the password settings section */
+.pass-settings {
+    margin-bottom: 20px;
+}
+
+/* Styling for the options list inside the password settings section */
+.pass-settings .options {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for the individual options inside the options list */
+.pass-settings .options .option {
+    margin-bottom: 10px;
+}
+
+/* Styling for the labels associated with the options */
+.pass-settings .options .option label {
+    margin-left: 5px;
+}
+
+/* Styling for the generate password button */
+.generate-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Styling for the generate password button on hover */
+.generate-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px #45a049; /* Neon effect */
+}
+
+/* Styling for the generated password input field */
+#generated-password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the copy button */
+#copy-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Styling for the copy button on hover */
+#copy-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #0056b3; /* Neon effect */
+}
+
+/* Styling for the title */
+.title {
+    font-weight: bold;
+}
+
+/* Styling for the password length range input */
+#password-length {
+    width: 100%;
+}
+
+/* Styling for the password length display */
+#password-length-display {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Strength Bar */
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the strength bar color indication */
+.red { background-color: red; }
+.orange { background-color: orange; }
+.green { background-color: green; }
+
+
+  /* Style for the h3 element */
+  h3 {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: red; 
+    text-align: center;
+  }
+  
+  
